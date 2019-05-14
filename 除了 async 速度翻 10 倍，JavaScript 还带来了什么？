@@ -1,3 +1,43 @@
 https://www.oschina.net/news/106670/what-s-new-in-javascript-google-io-2019?p=2
 
 
+
+使用方言口语化显示时间短语 API
+
+
+目前该功能支持秒、分钟、小时、天、周、月与季的短语表示，并且支持多种语言（不清楚有没有中文支持），
+开发者不再需要维护一个专门的相对时间短语列表。
+
+
+globalThis
+
+在不依赖环境的情况下，轻松访问全局“this”。
+
+
+
+WeakRef
+
+目前 JavaScript 中有 WeakMap 与 WeakSet 两个弱引用方法，
+只要将对象添加到 WeakMap 或 WeakSet 中，GC 在触发条件时就可以将其占用内存回收。
+
+WeakRef 是一种更加高级的 API，它提供了一个进入对象生命周期的窗口，
+可以解决 WeakMap 仅支持 object 类型作为 Key 的场景。
+
+
+
+新的 JavaScript 语言特性还包括：
+
+a.class fileds 可以直接在 class 中初始化变量而不用写在构造函数中
+
+
+b.私有 setter 与 getter
+
+c.提高数字可读性，numeric seperators 可以在写数字的时候使用 “_” 作为分隔符
+
+e.新的大数字类型 BigInt
+
+f.新增一些 Intl.* API，也就是用于国际化的 API，比如 Intl.NumberFormat 本地化格式化数字显示，Intl.RelativeTimeFormat() 与 Intl.DateTimeFormat() 本地化显示时间
+
+h.顶级 await，无需写 async
+
+i.新的 Promise 函数 Promise.allSettled() 与 Promise.any()

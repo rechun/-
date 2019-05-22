@@ -1,0 +1,36 @@
+
+========================================================================
+                            简单工厂设计模式
+========================================================================      
+
+使用场景
+简单工厂模式的概念就是创建对象，不仅如此，简单工厂模式还可以用来创建相似的对象。
+
+//工厂模式
+function createBook(name,time,type) {
+  //创建一个对象，并且对对象拓展属性和方法
+  var o = new Object();
+  o.name = name;
+  o.time = time;
+  o.type = type;
+  o.getName = function() {
+    console.log(this.name);
+  }
+  
+  //将对象返回
+  return o;
+}
+
+var book1 =  createBook('js book','2017/11/16','JS');
+var book2 =  createBook('css book','2017/11/13','CSS');
+
+book1.getName();
+book2.getName();
+
+
+这种简单工厂模式非常的像寄生式继承，只不过这里o没有继承任何对象和类。
+
+简单工厂的用途就是创建对象，或者创建相似的对象。
+
+
+https://juejin.im/post/5a37344651882506e50cbbde

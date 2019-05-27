@@ -1,0 +1,6 @@
+AMD 和 CMD 规范的区别
+
+
+AMD 提前执行依赖 - 尽早执行，requireJS 是它的实现
+
+CMD 按需执行依赖 - 懒执行，seaJS 是它的实现

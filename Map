@@ -26,3 +26,40 @@ e.Object都有自己的原型，原型链上的键名有可能和你自己在对
 map = Object.create(null) 来创建一个没有原型的对象，但是这种用法不太常见
 f.Map 在涉及频繁增删键值对的场景下会有些性能优势。
 
+
+=======================================================================
+
+var myMap = new Map();
+
+var keyObj = {};
+keyFunc = function (){};
+keyString = 'a string';
+
+myMap.set(keyString,'关联keyString 的value');
+myMap.set(keyObj,'keyObj 的value');
+myMap.set(keyFunc,'keyFunc 的value');
+
+myMap.size; // 3
+//读取值
+
+myMap.get(keyString)//关联keyString 的value
+
+myMap.get("a string"); //关联keyString 的value
+
+
+=======================================================================
+Map可以使用for..of循环来实现迭代：
+
+var myMap = new Map();
+myMap.set(0, "zero");
+myMap.set(1, "one");
+for (var [key, value] of myMap) {
+  console.log(key + " = " + value);
+}
+
+//"0 = zero" "1 = one"
+
+
+myMap.forEach(function(value, key) {
+  console.log(key + " = " + value);
+}, myMap)//"0 = zero" "1 = one"

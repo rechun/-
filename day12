@@ -1,0 +1,6 @@
+package-lock.json
+
+
+作用
+锁定安装时的包的版本号，并且需要上传到git，以保证其他人在npm install时大家的依赖能保证一致。
+

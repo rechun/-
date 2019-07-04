@@ -1,0 +1,25 @@
+什么是函数式编程
+
+a.不可变性 (Immutability)
+
+b.纯函数 (Pure Functions)
+
+c.数据转换 (Data Transformations)
+
+d.高阶函数 (Higher-Order Functions)
+
+e.递归
+
+f.组合
+
+
+String.prototype.split()
+使用指定的分隔符字符串，将string对象分割成字符串数组。
+
+
+Array.prototype.splice()
+删除或替换现有元素以数组形式返回被修改的内容。
+
+Array.prototype.slice()
+返回原数组的浅拷贝
+
